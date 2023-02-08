@@ -9,7 +9,9 @@
             $this->load->model('categorie_model', 'categorie');
             $allCategories=$this->categorie->getAllCategories();
             $data['allCategories']=$allCategories;
+            $this->load->view("templates/header");
             $this->load->view('categorie', $data);
+            $this->load->view("templates/footer");
         }
     }
 ?>

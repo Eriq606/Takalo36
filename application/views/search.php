@@ -2,22 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="Info_categorie">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list_categorie">
-                        <h2>Categorie</h2>
-                        <ul>
-                            <?php for($i=0; $i<count($categories); $i++){ ?>
-                                <li <?php if($categories[$i]['idcategorie']==$categorieActu){
-                                    echo "class='selectionner'";
-                                } ?>><?php 
-                                if($categories[$i]['idcategorie']!=$categorieActu){
-                                    echo "<a href='".site_url("listeObjet/index/".$categories[$i]['idcategorie'])."'>".$categories[$i]['nom']."</a>";
-                                }else{
-                                echo $categories[$i]['nom'];
-                                } ?></li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                    <form action="<?php echo site_url("listeObjet/recherche"); ?>" method="post">
+                    <form action="" method="post">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 search">
                             <div class="d-flex justify-content-center h-100">
                                 <div class="searchbar">

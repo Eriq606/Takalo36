@@ -109,5 +109,25 @@
             $request=sprintf($request, $newOwner, $idObj);
             $this->db->query($request);
         }
+        public function searchObjectCat($mot, $idCat){
+            $request="select * from (select object.*, utilisateur.nom, categorie.nom as nomcategorie from object join utilisateur on object.idutilisateur=utilisateur.idutilisateur join categorie on object.idcategorie=categorie.idCategorie) as objetcomplet where (titre like '%".$mot."%' or description like '%".$mot."%') and idCategorie=".$idCat;
+            $result=$this->db->query($request);
+            $liste=array();
+            for($i=0; $row=$result->result_array()[$i]; $i++){
+                $liste[$i]['idObject']=$row['idobject'];
+                $liste[$i]['idUtilisateur']=$row['idUtilisateur'];
+                $liste[$i]['nom']=$row['nom'];
+                $liste[$i]['titre']=$row['titre'];
+                $liste[$i]['description']=$row['description'];
+                $liste[$i]['prixEstimatif']=$row['prixEstimatif'];
+                $liste[$i]['idCategorie']=$row['idCategorie'];
+                $liste[$i]['nomCategorie']=$row['nomcategorie'];
+                $liste[$i]['images']=$this->getImageObject($liste[$i]['idObject']);
+                if(!isset($result->result_array()[$i+1])){
+                    break;
+                }
+            }
+            return $liste;
+        }
     }
 ?>

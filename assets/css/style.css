@@ -7,9 +7,10 @@
     }
 }
 
+
 header {
     position: fixed;
-    width: -webkit-fill-available;
+    width: 100%;
     height: 85px;
     box-shadow: 2px 1px 7px grey;
     background-color: white;
@@ -36,6 +37,9 @@ header {
     transition: 1s;
 }
 
+.header .nav-item a:hover {
+    
+}
 
 .body_log_insc {
     text-align: center;
@@ -113,7 +117,7 @@ header {
 }
 
 .body_categorie .title_categorie {
-    margin: 50px 0px 80px 0px;
+    margin: 180px 0px 80px 0px;
 }
 
 .body_categorie .title_categorie p{
@@ -123,6 +127,19 @@ header {
 .body_categorie .search {
     margin-bottom: 80px;
 }
+
+.search_input{
+    padding: 0 10px;
+    border: groove;
+    width: 300px;
+    height: 40px;
+    caret-color: rgb(36, 124, 201);
+}
+
+.searchbar:hover > .search_input{
+    caret-color: rgb(36, 124, 201);
+}
+
 
 .body_categorie .search select {
     width: 100px;
@@ -146,6 +163,7 @@ header {
 }
 
 .body_categorie .form_group {
+    text-align: -webkit-center;
     margin-bottom: 90px;
 }
 
@@ -176,7 +194,7 @@ header {
 
 .body_Info_categorie .Info_categorie {
     display: flex;
-    margin-top: 180px;
+    margin-top: 190px;
 }
 
 
@@ -204,8 +222,6 @@ header {
 }
 
 .body_Info_categorie .Info_categorie .list_categorie .image_objet {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 50px;
 }
 
@@ -238,7 +254,7 @@ header {
 
 .body_Info_categorie .Info_categorie .information_object {
     width: 25cm;
-    text-align: -webkit-center;
+    text-align: center;
     margin-top: 45px;
 }
 
@@ -290,7 +306,7 @@ header {
     text-align: center;
     display: inline-flex;
     flex-wrap: wrap;
-    width: 25cm;
+    width: 27cm;
 }
 
 .body_Info_categorie .Info_categorie .all_objet .objet_group {
@@ -308,7 +324,7 @@ header {
 
 
 .list_echange .title_invitation {
-    margin: 50px 0px 60px 0px;
+    margin: 190px 0px 60px 0px;
 }
 
 .list_echange button {
@@ -331,6 +347,7 @@ header {
 .acceptation_echange {
     margin-bottom: 100px;
 }
+
 
 .accept_echange {
     margin: 100px 0px 60px 0px;
@@ -362,14 +379,3 @@ header {
 }
 
 
-
-footer {
-    background-color: rgb(36, 124, 201);
-    color: white;
-    text-align: center;
-}
-
-footer .etu {
-    display: flex;
-    justify-content: space-between;
-}

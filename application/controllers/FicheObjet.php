@@ -11,7 +11,9 @@
             $data['objet']=$objet;
             $envoye=$this->objet->verifyIfEchange($idobjet);
             $data['envoye']=$envoye;
+            $this->load->view("templates/header");
             $this->load->view('echange', $data);
+            $this->load->view("templates/footer");
         }
     }
 ?>

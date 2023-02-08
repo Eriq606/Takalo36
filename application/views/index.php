@@ -12,8 +12,13 @@
     <div class="container">
         <div class="row">
             <div class="body_log_insc">
-                <h2>Login</h2>
-                <hr>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="title_categorie">
+                            <h2>Login</h2>
+                            <p class="w-ld-50">Connectez-vous pour acceder a votre compte et profiter de toutes les fonctionnalites</p>
+                        <hr>
+                        </div>
+                    </div>
 
                 <form action="identify" method="post">
                     <div class="log_insc">
@@ -34,9 +39,13 @@
                             </div>
                         </div>
                     </div>
+                    <button type="submit">Se Connecter</button>
+                    <p>Vous n'avez pas de compte? <a href="Inscription.html" class="link-info">S'inscrire</a></p>
 
                     <button type="submit">Se Connecter</button>
                 </form>
+
+                <a href="<?php echo site_url(); ?>">Se connecter en tant qu'admin</a>
             </div>
         </div>
     </div>

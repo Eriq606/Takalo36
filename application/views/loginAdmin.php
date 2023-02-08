@@ -22,7 +22,7 @@
                             <label for="inputEmail3" class=" col-form-label">Email</label>
                             </div>
                             <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input value="root" type="email" class="form-control" placeholder="Email">
                             </div>
                         </div>
 
@@ -30,13 +30,10 @@
                         <div class="input_mdp">
                             <label class="col-sm-2 col-form-label">Mot De Passe</label>
                             <div class="col-sm-10">
-                            <input type="password" class="form-control" placeholder="Mot De Passe">
+                            <input value="root" type="password" class="form-control" placeholder="Mot De Passe">
                             </div>
                         </div>
                     </div>
-
-                    <button type="submit">Se Connecter</button>
-                    <p>Vous n'avez pas de compte? <a href="Inscription.html" class="link-info">S'inscrire</a></p>
 
                 </form>
             </div>

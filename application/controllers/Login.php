@@ -10,5 +10,8 @@
         public function index(){
             $this->load->view('index');
         }
+        public function loginAdmin(){
+            $this->load->view("loginAdmin");
+        }
     }
 ?>

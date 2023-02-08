@@ -18,7 +18,9 @@
             $data["listeInvit"]=$listeInvit;
             $data["senders"]=$senders;
             $data["receivers"]=$receivers;
+            $this->load->view("templates/header");
             $this->load->view("invitation", $data);
+            $this->load->view("templates/footer");
         }
         public function detailInvit($idInvit){
             $this->load->model("invitation_model", "invite");
@@ -35,7 +37,9 @@
             $data["sender"]=$sender;
             $data["receiver"]=$receiver;
             $data["idInvite"]=$idInvit;
+            $this->load->view("templates/header");
             $this->load->view("infoechange", $data);
+            $this->load->view("templates/footer");
         }
         public function accepter($idInvit, $idA, $idObjA, $idB, $idObjB){
             $this->load->model("invitation_model", "invite");

@@ -8,7 +8,7 @@
             $this->load->model('identify_model', 'identifier');
             $userActu=$this->identifier->getUserByIdentifiant($id);
             $this->session->set_userdata('userActu', $userActu);
-            redirect('homepage');
+            redirect('listeObjet/index/1');
         }
     }
 ?>

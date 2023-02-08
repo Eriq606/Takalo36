@@ -28,21 +28,20 @@
 
                 <div class="Info_categorie">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list_categorie">
-                            <div class="image_objet">
-                                <?php for($i=0; $i<count($mesObjets); $i++){ ?>
-                                <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6 list_image_objet">
-                                    <a href="<?php echo site_url("choixObjet/changeObjet/".$mesObjets[$i]['idObject']."/".$idAutreObjet."/".$idAutre); ?>">
-                                    <div class="image_categorie">
-                                        <img src="<?php echo $mesObjets[$i]['images'][0]['urlImage']; ?>" alt="">
+                            <?php for($i=0; $i<count($mesObjets); $i++){ ?>
+                                <a href="<?php echo site_url("choixObjet/changeObjet/".$mesObjets[$i]['idObject']."/".$idAutreObjet."/".$idAutre); ?>">
+                                    <div class="image_objet">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list_image_objet">
+                                            <img src="<?php echo $mesObjets[$i]['images'][0]['urlImage']; ?>" style="width: 400px; height:350px">
+                                        </div>                                        
                                     </div>
 
                                     <div class="info_objet">
                                         <p><?php echo $mesObjets[$i]['titre']; ?></p>
                                     </div>
-                                    </a>
-                                </div>
-                                <?php } ?>
-                            </div>
+                                </a>
+                            <?php } ?>
+                                
                         </div>
 
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 object_choose">

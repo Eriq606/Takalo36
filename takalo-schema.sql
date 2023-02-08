@@ -96,4 +96,4 @@ create or replace view invitationcomplet as select Invitation.*, utilisateur.idu
 select count(idutilisateur) from utilisateur;
 select count(idInvitationAccept) from InvitationAccept;
 
-select * from Invitation where idInvitation in (select idInvitationAccept from InvitationAccept) and (idObjectDemande=idobject or idObjectPropose=idobjec);
+select * from Invitation where idInvitation in (select idInvitation from InvitationAccept) and (idObjectDemande=idobject or idObjectPropose=idobjec);

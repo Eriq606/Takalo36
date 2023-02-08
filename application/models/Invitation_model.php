@@ -48,7 +48,14 @@
             return $result->row_array()["nbEchanges"];
         }
         public function getEchangesObjet($idObjet){
-            $request="";
+            $request="select * from Invitation where idInvitation in (select idInvitation from InvitationAccept) and (idObjectDemande=%s or idObjectPropose=%s)";
+            $request=sprintf($request, $idObjet, $idObjet);
+            $result=$this->db->query($request);
+            $liste=array();
+            for($i=0; $i<count($result->result_array()); $i++){
+                $liste[$i]=$result->result_array()[$i];
+            }
+            return $liste;
         }
     }
 ?>

@@ -33,7 +33,24 @@
             redirect(site_url("listeObjet/mesObjets"));
         }
         public function historique($idObjet){
-            
+            $this->load->model("invitation_model", "invite");
+            $this->load->model("identify_model", "identify");
+            $this->load->model("objet_model", "objet");
+            $listeInvites=$this->invite->getEchangesObjet($idObjet);
+            $objet=$this->objet->getObjetByID($idObjet);
+            $senders=array();
+            $receivers=array();
+            for($i=0; $i<count($listeInvites); $i++){
+                $senders[$i]=$this->identify->getUserByID($listeInvites[$i]["idSender"]);
+                $receivers[$i]=$this->identify->getUserByID($listeInvites[$i]["idDestinataire"]);
+            }
+            $data["listeInvit"]=$listeInvites;
+            $data["senders"]=$senders;
+            $data["receivers"]=$receivers;
+            $data["objet"]=$objet;
+            $this->load->view("templates/header");
+            $this->load->view("historique", $data);
+            $this->load->view("templates/footer");
         }
     }
 ?>

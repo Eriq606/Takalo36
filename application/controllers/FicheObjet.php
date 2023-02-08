@@ -32,5 +32,8 @@
             $this->objet->modifierObjet($idObj, $titre, $desc, $prix);
             redirect(site_url("listeObjet/mesObjets"));
         }
+        public function historique($idObjet){
+            
+        }
     }
 ?>

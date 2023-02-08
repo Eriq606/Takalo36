@@ -47,5 +47,8 @@
             $result=$this->db->query("select count(idInvitationAccept) as nbEchanges from InvitationAccept");
             return $result->row_array()["nbEchanges"];
         }
+        public function getEchangesObjet($idObjet){
+            $request="";
+        }
     }
 ?>

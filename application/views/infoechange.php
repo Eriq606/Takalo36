@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/style.css">  
+    <link rel="stylesheet" href="<?php echo site_url("./assets/css/bootstrap.css"); ?>">
+    <link rel="stylesheet" href="<?php echo site_url("./assets/css/style.css"); ?>">  
     <title>Modif</title>
 </head>
 <body>
@@ -28,31 +28,29 @@
                 <div class="accept_echange">
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <div class="image_echange">
-                            <img src="" alt="">
-                            <p>hvjv</p>
+                            <img src="<?php echo site_url("assets/img/imgObjet/".$objetSend["images"][0]["urlImage"]); ?>" alt="">
                         </div>
 
                         <div class="info_image_echange">
-                            <p class="w-ld-50">Quelques categories que vous pouvez choisir</p>
+                            <p class="w-ld-50">Q<?php echo $objetSend["titre"]; ?></p>
                         </div>
 
                         <div class="user">
-                            <p>aaa</p>
+                            <p><?php echo $sender["nom"]; ?></p>
                         </div>
                     </div>
 
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <div class="image_echange">
-                            <img src="" alt="">
-                            <p>hvjv</p>
+                            <img src="<?php echo $objetDemand["images"][0]["urlImage"]; ?>" alt="">
                         </div>
                         
                         <div class="info_image_echange">
-                            <p class="w-ld-50">Quelques categories que vous pouvez choisir</p>
+                            <p class="w-ld-50"><?php echo $objetDemand["titre"]; ?></p>
                         </div>
 
                         <div class="user">
-                            <p>aaa</p>
+                            <p><?php echo $receiver["nom"]; ?></p>
                         </div>
                     </div>
                 </div>

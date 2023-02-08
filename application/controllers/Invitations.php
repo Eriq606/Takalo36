@@ -20,5 +20,21 @@
             $data["receivers"]=$receivers;
             $this->load->view("invitation", $data);
         }
+        public function detailInvit($idInvit){
+            $this->load->model("invitation_model", "invite");
+            $this->load->model("objet_model", "objet");
+            $invite=$this->invite->getInvitationByID($idInvit);
+            $objetSend=$this->objet->getObjetByID($invite['idObjectPropose']);
+            $objetDemand=$this->objet->getObjetByID($invite['idObjectDemande']);
+            $sender["idutilisateur"]=$objetSend["idUtilisateur"];
+            $sender["nom"]=$objetSend["nom"];
+            $receiver["idutilisateur"]=$objetDemand["idUtilisateur"];
+            $receiver["nom"]=$objetDemand["nom"];
+            $data["objetSend"]=$objetSend;
+            $data["objetDemand"]=$objetDemand;
+            $data["sender"]=$sender;
+            $data["receiver"]=$receiver;
+            $this->load->view("infoechange", $data);
+        }
     }
 ?>

@@ -38,7 +38,7 @@
                         <th>Demandeur</th>
                         <th>Receveur</th>
                         <th>Date et heure</th>
-                        <th></th>
+                        <th>Voir les details</th>
                     </tr>
                 </thead>
 

@@ -26,5 +26,12 @@
             }
             return $invites;
         }
+        public function getInvitationByID($id){
+            $request="select * from Invitation where idInvitation=%s";
+            $request=sprintf($request, $id);
+            $result=$this->db->query($request);
+            $invite=$result->row_array();
+            return $invite;
+        }
     }
 ?>

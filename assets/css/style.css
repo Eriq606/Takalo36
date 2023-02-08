@@ -10,7 +10,7 @@
 
 header {
     position: fixed;
-    width: 100%;
+    width: -webkit-fill-available;
     height: 85px;
     box-shadow: 2px 1px 7px grey;
     background-color: white;
@@ -124,44 +124,6 @@ header {
     font-size: larger;
 }
 
-.body_categorie .search {
-    margin-bottom: 80px;
-}
-
-.search_input{
-    padding: 0 10px;
-    border: groove;
-    width: 300px;
-    height: 40px;
-    caret-color: rgb(36, 124, 201);
-}
-
-.searchbar:hover > .search_input{
-    caret-color: rgb(36, 124, 201);
-}
-
-
-.body_categorie .search select {
-    width: 100px;
-    height: 40px;
-}
-
-.body_categorie .search button {
-    width: 100px;
-    height: 40px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-}
-
-.body_categorie .search button:hover {
-    width: 4cm;
-    background-color: rgb(36, 124, 201);
-    color: white;
-    transition: 1s;
-}
-
 .body_categorie .form_group {
     text-align: -webkit-center;
     margin-bottom: 90px;
@@ -192,9 +154,50 @@ header {
     margin-bottom: 100px;
 }
 
+.body_Info_categorie .recherche {
+    margin-top: 6cm;
+    display: flex;
+    text-align: center;
+}
+
+.body_Info_categorie .recherche .search_input{
+    padding: 0 10px;
+    border: groove;
+    width: 400px;
+    height: 40px;
+    caret-color: rgb(36, 124, 201);
+}
+
+.body_Info_categorie .recherche .searchbar:hover > .search_input{
+    caret-color: rgb(36, 124, 201);
+}
+
+
+.body_Info_categorie .recherche .search select {
+    width: 200px;
+    height: 40px;
+    margin-left: 100px;
+}
+
+.body_Info_categorie .recherche .search button {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.body_Info_categorie .recherche .search button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 1s;
+}
+
 .body_Info_categorie .Info_categorie {
     display: flex;
-    margin-top: 190px;
+    margin-top: 125px;
 }
 
 
@@ -221,13 +224,15 @@ header {
     color: rgb(36, 124, 201);
 }
 
-.body_Info_categorie .Info_categorie .list_categorie .image_objet {
+.body_Info_categorie .Info_categorie .image_objet {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
 .body_Info_categorie .Info_categorie .modif_object {
     width: 25cm;
-    text-align: center;
+    text-align: -webkit-center;
 }
 
 .body_Info_categorie .Info_categorie .modif_object input {
@@ -254,7 +259,7 @@ header {
 
 .body_Info_categorie .Info_categorie .information_object {
     width: 25cm;
-    text-align: center;
+    text-align: -webkit-center;
     margin-top: 45px;
 }
 
@@ -378,4 +383,32 @@ header {
     transition: 1s;
 }
 
+.histo {
+    margin-bottom: 100px;
+}
 
+.list_historique .historique_objet {
+    margin: 190px 0px 60px 0px;
+}
+
+.list_historique {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.list_historique button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 3cm;
+    height: 2.3em;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.list_historique button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 2s;
+}

@@ -8,16 +8,18 @@
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 search">
                             <div class="d-flex justify-content-center h-100">
                                 <div class="searchbar">
-                                    <input class="search_input" type="text" name="" placeholder="Search...">
+                                    <input class="search_input" type="text" name="search" placeholder="Search...">
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 search">
                                 <div class="select_categorie">
-                                    <?php for($i=0; $i<count($categories); $i++){ ?>
-                                        <option value="<?php echo $categories[$i]["idcategorie"]; ?>"><?php echo $categories[$i]["nom"]; ?></option>
-                                    <?php } ?>
+                                    <select name="search_cat" id="">
+                                        <?php for($i=0; $i<count($categories); $i++){ ?>
+                                            <option value="<?php echo $categories[$i]["idcategorie"]; ?>"><?php echo $categories[$i]["nom"]; ?></option>
+                                        <?php } ?>
+                                    </select>
                                 </div>
                         </div>
 

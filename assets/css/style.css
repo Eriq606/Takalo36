@@ -10,7 +10,7 @@
 
 header {
     position: fixed;
-    width: -webkit-fill-available;
+    width: 100%;
     height: 85px;
     box-shadow: 2px 1px 7px grey;
     background-color: white;

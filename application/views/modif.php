@@ -14,7 +14,6 @@
                         </div>
 
                         <form action="<?php echo site_url("ficheObjet/updateObjet"); ?>" method="post">
-
                             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 modif_object">
                                 <div class="titre">
                                     <input value="<?php echo $objet['titre']; ?>" name="titre" type="text" class="form-control" placeholder="Titre">

@@ -27,7 +27,7 @@
                             <label for="inputEmail3" class=" col-form-label">Email</label>
                             </div>
                             <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10">
-                                <input value='ken@gmail.com' type="email" class="form-control" placeholder="Email" name='email'>
+                                <input value='eriq@mail' type="email" class="form-control" placeholder="Email" name='email'>
                             </div>
                         </div>
 
@@ -35,7 +35,7 @@
                         <div class="input_mdp">
                             <label class="col-sm-2 col-form-label">Mot De Passe</label>
                             <div class="col-sm-10">
-                            <input value='passken' type="password" class="form-control" placeholder="Mot De Passe" name='pass'>
+                            <input value='passeriq' type="password" class="form-control" placeholder="Mot De Passe" name='pass'>
                             </div>
                         </div>
                     </div>

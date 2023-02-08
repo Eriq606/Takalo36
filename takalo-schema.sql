@@ -89,11 +89,11 @@ create table InvitationRefus(
         references Invitation(idInvitation)
 );
 
-create or replace view objetcomplet as select object.*, utilisateur.nom, categorie.nom as nomcategorie from object join utilisateur on object.idutilisateur=utilisateur.idutilisateur join categorie on object.idcategorie=categorie.idCategorie;
+-- create or replace view objetcomplet as select object.*, utilisateur.nom, categorie.nom as nomcategorie from object join utilisateur on object.idutilisateur=utilisateur.idutilisateur join categorie on object.idcategorie=categorie.idCategorie;
 
-create or replace view invitationcomplet as select Invitation.*, utilisateur.idutilisateur, object.idobject from Invitation join utilisateur.idutilisateur=Invitation.idSender join Invitation on object.idoject=Invitation.idObjectDemande join invitation on utilisateur.idutilisateur=Invitation.idDestinataire join Invitation on object.idobject=Invitation.idObjectDemande;
+-- create or replace view invitationcomplet as select Invitation.*, utilisateur.idutilisateur, object.idobject from Invitation join utilisateur.idutilisateur=Invitation.idSender join Invitation on object.idoject=Invitation.idObjectDemande join invitation on utilisateur.idutilisateur=Invitation.idDestinataire join Invitation on object.idobject=Invitation.idObjectDemande;
 
-select count(idutilisateur) from utilisateur;
-select count(idInvitationAccept) from InvitationAccept;
+-- select count(idutilisateur) from utilisateur;
+-- select count(idInvitationAccept) from InvitationAccept;
 
-select * from Invitation where idInvitation in (select idInvitation from InvitationAccept) and (idObjectDemande=idobject or idObjectPropose=idobjec);
+-- select * from Invitation where idInvitation in (select idInvitation from InvitationAccept) and (idObjectDemande=idobject or idObjectPropose=idobjec);

@@ -1,0 +1,346 @@
+@keyframes slidein {
+    from {
+        padding-top: 0px;
+    }
+    to {
+        padding-top: 200px;
+    }
+}
+
+header {
+    position: fixed;
+    width: -webkit-fill-available;
+    height: 90px;
+    box-shadow: 2px 1px 7px grey;
+    background-color: rgb(36, 124, 201);
+}
+
+.header {
+    display: flex;
+    font-size: large;
+    padding-top: 25px;
+    text-align: center;
+}
+
+
+.header .nav-item a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+}
+
+.header .nav-item a:hover {
+    
+}
+
+
+.body_log_insc {
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+    box-shadow: 2px 1px 7px grey;
+    border-radius: 1em;
+}
+
+.body_log_insc .input_email {
+    margin-top: 50px;
+    display: flex;
+}
+
+.body_log_insc .input_mdp {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.body_log_insc .form-control {
+    width: 80%;
+}
+
+
+.body_log_insc .form-group input{
+    width: 35em;
+    margin-left: 40px;
+}
+
+
+.body_log_insc .form-group select{
+    width: 35em;
+    margin-left: 40px;
+}
+
+.body_log_insc button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 3cm;
+    height: 2.3em;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.body_log_insc button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 1s;
+}
+
+.body_log_insc a {
+    text-decoration: none;
+    color: rgb(36, 124, 201);
+}
+
+.body_log_insc a:hover {
+    text-decoration: none;
+    color: rgb(36, 124, 201);
+}
+
+.categorie {
+    margin-bottom: 100px;
+}
+
+.body_categorie {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.body_categorie .title_categorie {
+    margin: 50px 0px 80px 0px;
+}
+
+.body_categorie .title_categorie p{
+    font-size: larger;
+}
+
+.body_categorie .form_group {
+    margin-bottom: 90px;
+}
+
+.body_categorie .form_group .name_categorie {
+    width: 250px;
+}
+
+.body_categorie .button_categorie button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 3cm;
+    height: 2.3em;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(36, 124, 201);
+    color: white;
+}
+
+.body_categorie .button_categorie button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 1s;
+}
+
+.body_Info_categorie {
+    margin-bottom: 100px;
+}
+
+.body_Info_categorie .Info_categorie {
+    display: flex;
+    margin-top: 180px;
+}
+
+
+.body_Info_categorie .Info_categorie .list_categorie {
+    width: 220px;
+}
+
+.body_Info_categorie .Info_categorie .list_categorie ul {
+    padding-left: inherit;
+}
+
+.body_Info_categorie .Info_categorie .list_categorie li {
+    list-style: none;
+    font-size: larger;
+    margin-top: 20px;
+}
+
+.body_Info_categorie .Info_categorie .list_categorie a {
+    text-decoration: none;
+    color: black;
+}
+
+.body_Info_categorie .Info_categorie .list_categorie .selectionner {
+    color: rgb(36, 124, 201);
+}
+
+.body_Info_categorie .Info_categorie .list_categorie .image_objet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.body_Info_categorie .Info_categorie .modif_object {
+    width: 25cm;
+    text-align: -webkit-center;
+}
+
+.body_Info_categorie .Info_categorie .modif_object input {
+    width: 15cm;
+    margin-top: 50px;
+}
+
+.body_Info_categorie .Info_categorie .modif_object button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 3cm;
+    height: 2.3em;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.body_Info_categorie .Info_categorie .modif_object button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 1s;
+}
+
+.body_Info_categorie .Info_categorie .information_object {
+    width: 25cm;
+    text-align: -webkit-center;
+    margin-top: 45px;
+}
+
+.body_Info_categorie .Info_categorie .information_object button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 5cm;
+    height: 2.3em;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.body_Info_categorie .Info_categorie .information_object button:hover {
+    width: 6cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 1s;
+}
+
+.body_Info_categorie .Info_categorie .object_choose {
+    width: 25cm;
+    text-align: -webkit-center;
+    margin-top: 45px;
+}
+
+.body_Info_categorie .Info_categorie .object_choose .valid_object {
+    display: flex;
+}
+
+.body_Info_categorie .Info_categorie .object_choose button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 3cm;
+    height: 2.3em;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.body_Info_categorie .Info_categorie .object_choose button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 1s;
+}
+
+.body_Info_categorie .Info_categorie .all_objet {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 25cm;
+}
+
+.body_Info_categorie .Info_categorie .all_objet .objet_group {
+    margin-bottom: 70px;
+}
+
+.invitation_echange {
+    margin-bottom: 100px;
+}
+
+.list_echange {
+    margin-top: -50px;
+    text-align: center;
+}
+
+
+.list_echange .title_invitation {
+    margin: 50px 0px 60px 0px;
+}
+
+.list_echange button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 3cm;
+    height: 2.3em;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.list_echange button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 2s;
+}
+
+.acceptation_echange {
+    margin-bottom: 100px;
+}
+
+.accept_echange {
+    margin: 100px 0px 60px 0px;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button_accept_refus_echange {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button_accept_refus_echange button {
+    width: 3cm;
+    height: 2.3em;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(36, 124, 201);
+    color: white;
+}
+
+.button_accept_refus_echange button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 1s;
+}
+
+
+
+footer {
+    background-color: rgb(36, 124, 201);
+    color: white;
+    text-align: center;
+}
+
+footer .etu {
+    display: flex;
+    justify-content: space-between;
+}

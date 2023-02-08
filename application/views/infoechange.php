@@ -55,15 +55,23 @@
                     </div>
                 </div>
 
+                <?php if($sender["idutilisateur"]!=$this->session->userActu["idutilisateur"]){ ?>
                 <div class="button_accept_refus_echange">
                     <div class="button_accept_echange">
-                        <a href="<?php echo site_url(""); ?>"><button>Accepter</button>
+                        <a href="<?php echo site_url("/invitations/accepter/".$idInvite."/".$sender["idutilisateur"]."/".$objetSend["idObject"]."/".$receiver["idutilisateur"]."/".$objetDemand["idObject"]); ?>"><button>Accepter</button></a>
                     </div>
 
                     <div class="button_refus_echange">
-                        <button>Refuser</button>
+                    <a href="<?php echo site_url("/invitations/refuser/".$idInvite); ?>"><button>Refuser</button></a>
                     </div>
                 </div>
+                <?php }else{ ?>
+                <div class="button_accept_refus_echange">
+                    <div class="button_refus_echange">
+                        <button>Annuler</button>
+                    </div>
+                </div>
+                <?php } ?>
             </div>
         </div>
     </section>

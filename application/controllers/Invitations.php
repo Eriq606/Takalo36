@@ -34,6 +34,7 @@
             $data["objetDemand"]=$objetDemand;
             $data["sender"]=$sender;
             $data["receiver"]=$receiver;
+            $data["idInvite"]=$idInvit;
             $this->load->view("infoechange", $data);
         }
         public function accepter($idInvit, $idA, $idObjA, $idB, $idObjB){
@@ -42,6 +43,11 @@
             $this->invite->accepter($idInvit);
             $this->objet->changeOwner($idObjA, $idB);
             $this->objet->changeOwner($idObjB, $idA);
+            redirect("invitations/listeInvit");
+        }
+        public function refuser($idInvit){
+            $this->load->model("invitation_model", "invite");
+            $this->invite->refuser($idInvit);
             redirect("invitations/listeInvit");
         }
     }

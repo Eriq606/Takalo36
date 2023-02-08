@@ -28,10 +28,10 @@
                                 </div>
                                 <input type="hidden" name="idObject" value="<?php echo $objet["idObject"]; ?>">
                                 <button type="submit">Valider</button>
-                                <a href="<?php echo site_url("ficheObjet/historique/".$objet["idObject"]); ?>"><button>Voir l'historique</button></a>
 
                             </div>
                         </form>
+                        <a href="<?php echo site_url("ficheObjet/historique/".$objet["idObject"]); ?>"><button>Voir l'historique</button></a>
 
 
                 </div>

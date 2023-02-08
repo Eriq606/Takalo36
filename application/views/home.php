@@ -45,7 +45,7 @@
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 objet_group">
                             <a href="<?php echo site_url("ficheObjet/showObjet/".$liste[$i]['idObject']); ?>">
                                 <div class="image_categorie">
-                                    <img src="" alt="">
+                                    <img src="<?php echo $liste[$i]['images'][0]['urlImage']; ?>" alt="">
                                 </div>
 
                                 <div class="info_objet">

@@ -67,7 +67,7 @@ create table Invitation(
         references object(idobject)
 );
 create table InvitationAccept(
-    idInvitationAccept int primary key,
+    idInvitationAccept int primary auto_increment,
     idInvitation int,
     dateInvAccept date,
     heureInvAccept time,
@@ -75,7 +75,7 @@ create table InvitationAccept(
         references Invitation(idInvitation)
 );
 create table InvitationRefus(
-    idInvitationRefus int primary key,
+    idInvitationRefus int primary key auto_increment,
     idInvitation int,
     dateInvRefus date,
     heureInvRefus time,
@@ -86,3 +86,6 @@ create table InvitationRefus(
 create or replace view objetcomplet as select object.*, utilisateur.nom, categorie.nom as nomcategorie from object join utilisateur on object.idutilisateur=utilisateur.idutilisateur join categorie on object.idcategorie=categorie.idCategorie;
 
 create or replace view invitationcomplet as select Invitation.*, utilisateur.idutilisateur, object.idobject from Invitation join utilisateur.idutilisateur=Invitation.idSender join Invitation on object.idoject=Invitation.idObjectDemande join invitation on utilisateur.idutilisateur=Invitation.idDestinataire join Invitation on object.idobject=Invitation.idObjectDemande;
+
+select count(idutilisateur) from utilisateur;
+select count(idInvitationAccept) from InvitationAccept;

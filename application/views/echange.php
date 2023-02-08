@@ -25,7 +25,7 @@
                                 <div class="prix">
                                     <label for=""> Prix : <?php echo $objet['prixEstimatif']; ?></label>
                                 </div>
-                                <?php if(!$envoye){ ?>
+                                <?php if(!$envoye&&!isset($this->session->userActu["admin"])){ ?>
                                 <a href="<?php echo site_url("choixObjet/choixObjet/".$objet['idObject']."/".$objet['idUtilisateur']); ?>"><button>Proposer Echange</button></a>
                                 <?php } ?>
                             </div>

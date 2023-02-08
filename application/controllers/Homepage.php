@@ -1,7 +1,7 @@
 <?php
-    require_once(APPPATH.'controllers/CheckSession.php');
+    require_once(APPPATH.'controllers/AdminSession.php');
     defined('BASEPATH') OR exit('No direct script access allowed');
-    class Homepage extends CheckSession{
+    class Homepage extends AdminSession{
         public function __construct(){
             parent::__construct();
         }

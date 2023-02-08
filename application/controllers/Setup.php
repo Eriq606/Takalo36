@@ -10,5 +10,15 @@
             $this->session->set_userdata('userActu', $userActu);
             redirect('listeObjet/index/1');
         }
+        public function setupAdmin($id){
+            if($id==null){
+                redirect('login');
+            }
+            $this->load->model('identify_model', 'identifier');
+            $userActu=$this->identifier->getUserByIdentifiant($id);
+            $userActu['admin']="true";
+            $this->session->set_userdata('userActu', $userActu);
+            redirect('homepage');
+        }
     }
 ?>

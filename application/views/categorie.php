@@ -16,7 +16,6 @@
 
                         <div class="name_categorie">
                             <h3><?php echo $allCategories[$i]['nom']; ?></h3>
-                            <p>Categorie</p>
                         </div>
 
                         <div class="button_categorie">

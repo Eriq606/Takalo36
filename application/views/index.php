@@ -41,11 +41,9 @@
                     </div>
                     <button type="submit">Se Connecter</button>
                     <p>Vous n'avez pas de compte? <a href="Inscription.html" class="link-info">S'inscrire</a></p>
-
-                    <button type="submit">Se Connecter</button>
                 </form>
 
-                <a href="<?php echo site_url(); ?>">Se connecter en tant qu'admin</a>
+                <a href="<?php echo site_url("login/loginAd"); ?>">Se connecter en tant qu'admin</a>
             </div>
         </div>
     </div>

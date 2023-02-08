@@ -13,8 +13,12 @@
         <div class="header">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nav-item">
                 <a href="<?php echo site_url("listeObjet/index/1"); ?>">Home</a>
-                <a href="<?php echo site_url("listeObjet/mesObjets"); ?>">Mes Objets</a>
-                <a href="<?php echo site_url("invitations/listeInvit"); ?>">Invitations</a>
+                <?php if(isset($this->session->userActu["admin"])){ ?>
+                    <a href="<?php echo site_url("homepage"); ?>">Categories</a>
+                <?php }else{ ?>
+                    <a href="<?php echo site_url("listeObjet/mesObjets"); ?>">Mes Objets</a>
+                    <a href="<?php echo site_url("invitations/listeInvit"); ?>">Invitations</a>
+                <?php } ?>
             </div>
         </div>
     </header>

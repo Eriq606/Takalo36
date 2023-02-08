@@ -12,5 +12,16 @@
                 redirect('login');
             }
         }
+        public function logAdmin(){
+            $mail=$this->input->post('email');
+            $pass=$this->input->post('pass');
+            $this->load->model('identify_model', 'identification');
+            $id=$this->identification->checkIdentifiant($mail, $pass);
+            if($id!=false){
+                redirect('setup/setupAdmin/'.$id);
+            }else{
+                redirect('login');
+            }
+        }
     }
 ?>

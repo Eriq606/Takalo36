@@ -10,7 +10,7 @@
         public function index(){
             $this->load->view('index');
         }
-        public function loginAdmin(){
+        public function loginAd(){
             $this->load->view("loginAdmin");
         }
     }

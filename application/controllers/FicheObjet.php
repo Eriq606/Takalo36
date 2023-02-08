@@ -15,5 +15,22 @@
             $this->load->view('echange', $data);
             $this->load->view("templates/footer");
         }
+        public function modifObjet($idObjet){
+            $this->load->model("objet_model", "objet");
+            $objet=$this->objet->getObjetByID($idObjet);
+            $data['objet']=$objet;
+            $this->load->view("templates/header");
+            $this->load->view('modif', $data);
+            $this->load->view("templates/footer");
+        }
+        public function updateObjet(){
+            $titre=$this->input->post("titre");
+            $desc=$this->input->post("desc");
+            $prix=$this->input->post("prix");
+            $idObj=$this->input->post("idObject");
+            $this->load->model("objet_model", "objet");
+            $this->objet->modifierObjet($idObj, $titre, $desc, $prix);
+            redirect(site_url("listeObjet/mesObjets"));
+        }
     }
 ?>

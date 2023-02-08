@@ -113,6 +113,9 @@
             $request="select * from (select object.*, utilisateur.nom, categorie.nom as nomcategorie from object join utilisateur on object.idutilisateur=utilisateur.idutilisateur join categorie on object.idcategorie=categorie.idCategorie) as objetcomplet where (titre like '%".$mot."%' or description like '%".$mot."%') and idCategorie=".$idCat;
             $result=$this->db->query($request);
             $liste=array();
+            if(!isset($result->result_array()[0])){
+                return $liste;
+            }
             for($i=0; $row=$result->result_array()[$i]; $i++){
                 $liste[$i]['idObject']=$row['idobject'];
                 $liste[$i]['idUtilisateur']=$row['idUtilisateur'];
@@ -128,6 +131,11 @@
                 }
             }
             return $liste;
+        }
+        public function modifierObjet($idObjet, $titre, $desc, $prix){
+            $request="update object set titre='%s', description='%s', prixEstimatif=%s where idobject=%s";
+            $request=sprintf($request, $titre, $desc, $prix, $idObjet);
+            $this->db->query($request);
         }
     }
 ?>

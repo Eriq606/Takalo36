@@ -11,9 +11,6 @@
                                 <img src="<?php echo site_url("assets/img/imgObjet/".$objet['images'][$i]['urlImage']); ?>" style="width: 400px; height:350px">
                             </div>
                             <?php } ?>
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list_image_objet">
-                                <img src="" style="width: 400px; height:350px">
-                            </div>
                         </div>
 
                         <form action="<?php echo site_url("ficheObjet/updateObjet"); ?>" method="post">

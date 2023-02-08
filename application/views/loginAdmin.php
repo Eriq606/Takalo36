@@ -43,7 +43,7 @@
                     <button type="submit">Se Connecter</button>
                 </form>
 
-                <a href="<?php echo site_url("login/loginAdmin"); ?>">Se connecter en tant qu'admin</a>
+                <a href="<?php echo site_url("login"); ?>">Se connecter en tant que client</a>
             </div>
         </div>
     </div>

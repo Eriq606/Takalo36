@@ -232,8 +232,8 @@ header {
 }
 
 .body_Info_categorie .Info_categorie .modif_object {
-    width: 25cm;
-    text-align:center;
+    width: 20cm;
+    text-align:-webkit-center;
 }
 
 .body_Info_categorie .Info_categorie .modif_object input {

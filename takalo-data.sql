@@ -1,29 +1,33 @@
 insert into identifiant values(null, 'eriq@mail', 'passeriq');
 insert into residence values(null, 'Antananarivo');
-insert into utilisateur values(null, 1, 'Eriq', 'RohWeltall', '2004-02-15', 1, 'eriq.jpg');
+insert into utilisateur values(null, 1, 'Eriq', 'RohWeltall', '2004-02-15', 1);
 
 insert into identifiant values(null, 'ken@gmail.com', 'passken');
 insert into residence values(null, 'Diego');
-insert into utilisateur values(null, 2, 'Maharavo', 'Kenzo', '2004-01-30', 2, 'kenzo.jpg');
+insert into utilisateur values(null, 2, 'Maharavo', 'Kenzo', '2004-01-30', 2);
 
 insert into identifiant values(null, 'mahefa@gmail.com', 'passmah');
 insert into residence values(null, 'Tana');
-insert into utilisateur values (null, 3, 'Mahefa', 'rsm-mah', '2004-03-23', 3, 'mahefa.jpg');
+insert into utilisateur values (null, 3, 'Mahefa', 'rsm-mah', '2004-03-23', 3);
+
+insert into identifiant values(null, 'root@gmail.com', 'root');
+insert into residence values(null, 'Tana');
+insert into utilisteur values(null, 'root', 'root', '2023-01-01');
 
 insert into categorie values(null, 'vetements');
 insert into categorie values(null, 'outils');
 insert into categorie values(null, 'multimedias');
 
 insert into object values(null, 1, 'lamba', 'ceco est un lamba', 19.23, 1);
-insert into object values(null, 1, 'lamba', 'ceci est un lamba', 17.22, 1);
-insert into object values(null, 1, 'lamba', 'ceci est un lamba', 17, 1);
-insert into object values(null, 1, 'lamba', 'ceci est un lamba', 20, 1);
+insert into object values(null, 1, 'polo', 'ceci est un lamba', 17.22, 1);
+insert into object values(null, 1, 'chemise', 'ceci est un lamba', 17, 1);
+insert into object values(null, 1, 'shirt', 'ceci est un lamba', 20, 1);
 insert into object values(null, 2, 'outil', 'ceci est un outil', 25, 2);
-insert into object values(null, 2, 'multimedia', 'ceci est un multimedia', 15, 3);
-insert into object values(null, 2, 'multimedia', 'ceci est un multimedia', 16, 3);
-insert into object values(null, 3, 'multimedia', 'ceci est un multimedia', 16.50, 3);
-insert into object values(null, 3, 'multimedia', 'ceci est un multimedia', 13.18, 3);
-insert into object values(null, 3, 'multimedia', 'ceci est un multimedia', 17.99, 3);
+insert into object values(null, 2, 'phone', 'ceci est un multimedia', 15, 3);
+insert into object values(null, 2, 'iphone', 'ceci est un multimedia', 16, 3);
+insert into object values(null, 3, 'ordiportable', 'ceci est un multimedia', 16.50, 3);
+insert into object values(null, 3, 'radio', 'ceci est un multimedia', 13.18, 3);
+insert into object values(null, 3, 'samsung', 'ceci est un multimedia', 17.99, 3);
 
 insert into imageObject values(null, 1, 'chemise.jfif');
 insert into imageObject values(null, 1, 'colashirt.jfif');

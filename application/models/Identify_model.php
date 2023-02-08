@@ -23,5 +23,9 @@
             $result=$this->db->query($request);
             return $result->row_array();
         }
+        public function getNbUsers(){
+            $result=$this->db->query("select count(idutilisateur) as nbInscrits from utilisateur");
+            return $result->row_array()["nbInscrits"];
+        }
     }
 ?>

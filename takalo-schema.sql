@@ -43,11 +43,17 @@ create table object(
 );
 create table imageObject(
     idImageObject int primary key auto_increment,
-    urlImage varchar(20)
+    idObject int,
+    urlImage varchar(20),
+    foreign key idObject
+        references object(idobject)
 );
 create table imageUtilisateur(
     idImageUtilisateur int primary key auto_increment,
-    urlImage varchar(20)
+    idutilisateur int,
+    urlImage varchar(20),
+    foreign key (idutilisateur)
+        references utilisateur(idutilisateur)
 );
 create table Invitation(
     idInvitation int primary key auto_increment,

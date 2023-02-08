@@ -67,6 +67,7 @@ create table Invitation(
         references object(idobject)
 );
 create table InvitationAccept(
+    idInvitationAccept int primary key,
     idInvitation int,
     dateInvAccept date,
     heureInvAccept time,
@@ -74,6 +75,7 @@ create table InvitationAccept(
         references Invitation(idInvitation)
 );
 create table InvitationRefus(
+    idInvitationRefus int primary key,
     idInvitation int,
     dateInvRefus date,
     heureInvRefus time,

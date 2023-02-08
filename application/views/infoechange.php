@@ -42,7 +42,7 @@
 
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <div class="image_echange">
-                            <img src="<?php echo $objetDemand["images"][0]["urlImage"]; ?>" alt="">
+                            <img src="<?php echo site_url("assets/img/imgObjet/".$objetDemand["images"][0]["urlImage"]); ?>" alt="">
                         </div>
                         
                         <div class="info_image_echange">
@@ -57,7 +57,7 @@
 
                 <div class="button_accept_refus_echange">
                     <div class="button_accept_echange">
-                        <button>Accepter</button>
+                        <a href="<?php echo site_url(""); ?>"><button>Accepter</button>
                     </div>
 
                     <div class="button_refus_echange">

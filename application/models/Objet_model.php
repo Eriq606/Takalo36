@@ -104,5 +104,10 @@
             }
             return false;
         }
+        public function changeOwner($idObj, $newOwner){
+            $request="update object set idUtilisateur=%s where idobject=%s";
+            $request=sprintf($request, $newOwner, $idObj);
+            $this->db->query($request);
+        }
     }
 ?>

@@ -7,7 +7,7 @@
             $this->db->query($request);
         }
         public function getInvitationsByUser($idUser){
-            $request="select * from Invitation where idSender=%s or idDestinataire=%s";
+            $request="select * from Invitation where idSender=%s or idDestinataire=%s and idInvitation not in (select idInvitation from InvitationAccept union select idInvitation from InvitationRefus)";
             $request=sprintf($request, $idUser, $idUser);
             $result=$this->db->query($request);
             $invites=array();
@@ -17,7 +17,7 @@
             return $invites;
         }
         public function getInvitationsSent($idUser){
-            $request="select * from Invitation where idSender=%s";
+            $request="select * from Invitation where idSender=%s and idInvitation not in (select idInvitation from InvitationAccept union select idInvitation from InvitationRefus)";
             $request=sprintf($request, $idUser);
             $result=$this->db->query($request);
             $invites=array();
@@ -32,6 +32,11 @@
             $result=$this->db->query($request);
             $invite=$result->row_array();
             return $invite;
+        }
+        public function accepter($idInvit){
+            $request="insert into InvitationAccept values(null, %s, (select now()), (select now()))";
+            $request=sprintf($request, $idInvit);
+            $this->db->query($request);
         }
     }
 ?>

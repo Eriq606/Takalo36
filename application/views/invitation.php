@@ -70,7 +70,7 @@
                         </td>
 
                         <td>
-                            <a href="infoechange.php"><button>Voir Echange</button></a>
+                            <a href="<?php echo site_url("invitations/detailInvit/".$listeInvit[$i]["idInvitation"]); ?>"><button>Voir Echange</button></a>
                         </td>
                     </tr>
                     <?php } ?>

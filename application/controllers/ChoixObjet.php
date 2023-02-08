@@ -12,7 +12,9 @@
             $data['objetActu']=0;
             $data['idAutreObjet']=$idAutreObjet;
             $data['idAutre']=$idAutre;
+            $this->load->view("templates/header");
             $this->load->view('choixechange', $data);
+            $this->load->view("templates/footer");
         }
         public function changeObject($idObject, $idAutreObjet, $idAutre){
             $this->load->model("objet_model", "objet");
@@ -21,7 +23,9 @@
             $data['objetActu']=$idObject;
             $data['idAutreObjet']=$idAutreObjet;
             $data['idAutre']=$idAutre;
+            $this->load->view("templates/header");
             $this->load->view('choixechange', $data);
+            $this->load->view("templates/footer");
         }
     }
 ?>

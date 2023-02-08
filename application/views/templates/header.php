@@ -12,6 +12,7 @@
     <header>
         <div class="header">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nav-item">
+                <a><?php echo $this->session->userActu["nom"]; ?></a>
                 <a href="<?php echo site_url("listeObjet/index/1"); ?>">Home</a>
                 <?php if(isset($this->session->userActu["admin"])){ ?>
                     <a href="<?php echo site_url("homepage"); ?>">Categories</a>

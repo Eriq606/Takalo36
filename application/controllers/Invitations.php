@@ -1,9 +1,12 @@
 <?php
     require_once(APPPATH.'controllers/CheckSession.php');
     defined('BASEPATH') OR exit('No direct script access allowed');
-    class Invitation extends CheckSession{
+    class Invitations extends CheckSession{
+        public function __construct(){
+            parent::__construct();
+        }
         public function listeInvit(){
-            $this->load->model("invitation_model", " invite");
+            $this->load->model("invitation_model", "invite");
             $this->load->model("identify_model", "identify");
             $listeInvit=$this->invite->getInvitationsByUser($this->session->userActu["idutilisateur"]);
             $senders=array();

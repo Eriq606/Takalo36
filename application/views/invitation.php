@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/style.css">  
+    <link rel="stylesheet" href="<?php echo site_url("./assets/css/bootstrap.css"); ?>">
+    <link rel="stylesheet" href="<?php echo site_url("./assets/css/style.css"); ?>">  
     <title>Modif</title>
 </head>
 <body>
@@ -35,14 +35,15 @@
             <table class="table align-middle mb-0 bg-white">
                 <thead class="bg-light">
                     <tr>
-                        <th>User</th>
-                        <th>Date et Heure</th>
+                        <th>Demandeur</th>
+                        <th>Receveur</th>
+                        <th>Date et heure</th>
                         <th></th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <?php for($i=0; $i<count($listeInvite); $i++){ ?>
+                    <?php for($i=0; $i<count($listeInvit); $i++){ ?>
                     <tr>
                         <td>
                             <div class="d-flex align-items-center">
@@ -56,6 +57,14 @@
                             <div class="d-flex align-items-center">
                                 <div class="ms-3">
                                     <p class="fw-bold mb-1"><?php echo $receivers[$i]['nom']; ?></p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="ms-3">
+                                    <p class="fw-bold mb-1"><?php echo $listeInvit[$i]['dateInvite']." ".$listeInvit[$i]['heureInvite']; ?></p>
                                 </div>
                             </div>
                         </td>

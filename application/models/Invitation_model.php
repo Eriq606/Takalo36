@@ -8,7 +8,7 @@
         }
         public function getInvitationsByUser($idUser){
             $request="select * from Invitation where idSender=%s or idDestinataire=%s";
-            $request=sprintf($request, $idUser);
+            $request=sprintf($request, $idUser, $idUser);
             $result=$this->db->query($request);
             $invites=array();
             for($i=0; $i<count($result->result_array()); $i++){

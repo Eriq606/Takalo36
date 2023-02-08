@@ -15,7 +15,7 @@
                 <a href="categorie.php">Categorie</a>
                 <a href="">Home</a>
                 <a href="objet.php">Mes Objets</a>
-                <a href="invitation.php">Invitations</a>
+                <a href="invitations/listeInvit">Invitations</a>
             </div>
         </div>
         <hr>

@@ -17,5 +17,11 @@
             $result=$this->db->query($request);
             return $result->row_array();
         }
+        public function getUserByID($ID){
+            $request="select * from utilisateur where idutilisateur='%s'";
+            $request=sprintf($request, $ID);
+            $result=$this->db->query($request);
+            return $result->row_array();
+        }
     }
 ?>

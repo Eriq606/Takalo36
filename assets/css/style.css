@@ -10,9 +10,9 @@
 header {
     position: fixed;
     width: -webkit-fill-available;
-    height: 90px;
+    height: 85px;
     box-shadow: 2px 1px 7px grey;
-    background-color: rgb(36, 124, 201);
+    background-color: white;
 }
 
 .header {
@@ -25,12 +25,15 @@ header {
 
 .header .nav-item a {
     text-decoration: none;
-    color: white;
+    color: black;
     margin-left: 50px;
 }
 
 .header .nav-item a:hover {
-    
+    text-decoration: none;
+    color: rgb(36, 124, 201);
+    margin-left: 50px;
+    transition: 1s;
 }
 
 
@@ -42,15 +45,17 @@ header {
     border-radius: 1em;
 }
 
-.body_log_insc .input_email {
+.body_log_insc .log_insc .input_email {
     margin-top: 50px;
     display: flex;
+    justify-content: space-between;
 }
 
-.body_log_insc .input_mdp {
+.body_log_insc .log_insc .input_mdp {
     margin-top: 50px;
     margin-bottom: 30px;
     display: flex;
+    justify-content: space-between;
 }
 
 .body_log_insc .form-control {
@@ -115,6 +120,31 @@ header {
     font-size: larger;
 }
 
+.body_categorie .search {
+    margin-bottom: 80px;
+}
+
+.body_categorie .search select {
+    width: 100px;
+    height: 40px;
+}
+
+.body_categorie .search button {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.body_categorie .search button:hover {
+    width: 4cm;
+    background-color: rgb(36, 124, 201);
+    color: white;
+    transition: 1s;
+}
+
 .body_categorie .form_group {
     margin-bottom: 90px;
 }
@@ -135,7 +165,6 @@ header {
 }
 
 .body_categorie .button_categorie button:hover {
-    width: 4cm;
     background-color: rgb(36, 124, 201);
     color: white;
     transition: 1s;

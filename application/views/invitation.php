@@ -42,44 +42,29 @@
                 </thead>
 
                 <tbody>
+                    <?php for($i=0; $i<count($listeInvite); $i++){ ?>
                     <tr>
                         <td>
                             <div class="d-flex align-items-center">
                                 <div class="ms-3">
-                                    <p class="fw-bold mb-1">Mahefa</p>
+                                    <p class="fw-bold mb-1"><?php echo $senders[$i]['nom']; ?></p>
                                 </div>
                             </div>
                         </td>
 
                         <td>
-                            <p class="fw-normal mb-1">Software engineer</p>
-                        </td>
-
-                        <td>
-                            <a href="infoechange.php"><button>Voir Echange</button></a>
-                        </td>
-
-                    </tr>
-
-
-                    <tr>
-                        <td>
                             <div class="d-flex align-items-center">
                                 <div class="ms-3">
-                                    <p class="fw-bold mb-1">Dimby</p>
+                                    <p class="fw-bold mb-1"><?php echo $receivers[$i]['nom']; ?></p>
                                 </div>
                             </div>
-                        </td>
-
-                        <td>
-                            <p class="fw-normal mb-1">Software engineer</p>
                         </td>
 
                         <td>
                             <a href="infoechange.php"><button>Voir Echange</button></a>
                         </td>
                     </tr>
-
+                    <?php } ?>
 
                 </tbody>
               </table>

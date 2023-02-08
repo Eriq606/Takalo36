@@ -32,6 +32,27 @@
                             <p class="w-ld-50">Explorez notre vaste sélection de produits regroupés par catégories pour trouver ce qui vous convient le mieux</p>
                         </div>
                     </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 search">
+                        <div class="d-flex justify-content-center h-100">
+                            <div class="searchbar">
+                                <input class="search_input" type="text" name="" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 search">
+                            <div class="select_categorie">
+                                <select name="" id="">
+                                    <option value="">Categorie</option>
+                                </select>
+                            </div>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 search">
+                            <div class="button_searh">
+                                <button type="submit">Rechercher</button>
+                            </div>
+                    </div>
                     <?php for($i=0; $i<count($allCategories); $i++){ ?>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 form_group">
                         <div class="number_categorie">

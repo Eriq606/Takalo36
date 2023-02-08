@@ -25,7 +25,7 @@
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 objet_group">
                             <a href="<?php echo site_url("ficheObjet/modifObjet/".$liste[$i]['idObject']); ?>">
                                 <div class="image_categorie">
-                                    <img src="<?php echo site_url("assets/img/imgObjet".$liste[$i]['images'][0]['urlImage']); ?>" alt="" style="width: 300px; height:350px">
+                                    <img src="<?php echo site_url("assets/img/imgObjet/".$liste[$i]['images'][0]['urlImage']); ?>" alt="" style="width: 300px; height:350px">
                                 </div>
 
                                 <div class="info_objet">

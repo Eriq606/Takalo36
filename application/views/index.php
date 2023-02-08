@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <button type="submit">Se Connecter</button>
-                    <p>Vous n'avez pas de compte? <a href="Inscription.html" class="link-info">S'inscrire</a></p>
+                    <!-- <p>Vous n'avez pas de compte? <a href="Inscription.html" class="link-info">S'inscrire</a></p> -->
                 </form>
 
                 <a href="<?php echo site_url("login/loginAd"); ?>">Se connecter en tant qu'admin</a>

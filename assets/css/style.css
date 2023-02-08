@@ -10,7 +10,7 @@
 
 header {
     position: fixed;
-    width: 100%;
+    width: -webkit-fill-available;
     height: 85px;
     box-shadow: 2px 1px 7px grey;
     background-color: white;
@@ -203,6 +203,7 @@ header {
 
 .body_Info_categorie .Info_categorie .list_categorie {
     width: 220px;
+    text-align: center;
 }
 
 .body_Info_categorie .Info_categorie .list_categorie ul {
